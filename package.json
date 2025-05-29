@@ -1,0 +1,30 @@
+{
+  "name": "wasm-bench-experiments",
+  "version": "1.0.0",
+  "description": "Experiments for benchmarking Starky and Plonky3 proof generation in-browser, using Web Assembly.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tideofwords/wasm-bench-experiments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tideofwords/wasm-bench-experiments/issues"
+  },
+  "homepage": "https://github.com/tideofwords/wasm-bench-experiments#readme",
+  "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2"
+  }
+}

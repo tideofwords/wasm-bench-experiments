@@ -17,8 +17,7 @@ Nikhil's main modifications.
 - Created file `webpack.config.js`
 - Created file `www/index.html`
 - Created file `www/index.js`
-- run `npm init wasm-app www` from the directory of this repo. This creates a `www` directory.
-- run `npm install` from `www` directory.
+- Created file `www/env-shim.js`
 - Add the following code at the of `www/package.json` file:
 ```
 {
@@ -37,6 +36,8 @@ experiments: {
   },
 }
 ```
+- run `npm init wasm-app www` from the directory of this repo. This creates a `www` directory.
+- run `npm install` from `www` directory.
 
 Nikhil's compile process.
 - clone the [backend-exploration](www.github.com/0xPARC/backend-exploration) repo from 0xPARC
@@ -47,5 +48,6 @@ Nikhil's compile process.
 - at a command line, set ``` RUSTFLAGS='--cfg getrandom_backend="wasm_js"' ```
 - run ` wasm-pack build --release --target bundler` from the directory of this repo. This creates a `pkg` directory.
 - run `npm install` from `www` directory.
+- run `npm uninstall webpack webpack-cli webpack-dev-server` from `www` directory.
 - run `npm install --save-dev webpack@^5 webpack-cli@^4 webpack-dev-server@^4` from `www` directory.
 - run `npm run start`

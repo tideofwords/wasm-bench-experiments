@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>WASM Benchmark</title>
+</head>
+<body>
+  <pre id="output">Loading…</pre>
+  <script src="/bundle.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>WASM Benchmark</title>
+</head>
+<body>
+  <pre id="output"></pre>
+  <script type="module">
+
+    console.log("script loaded!");
+    document.getElementById("output").textContent = "🛰️ Hello from JS!";
+  
+    import { run_st } from '../pkg/wasm_benchmark_experiments.js';
+    // import init, { run_st } from '../pkg/wasm_benchmark_experiments.js';
+
+    (async () => {
+      // 1) instantiate & start the Wasm, wiring up all the env imports
+      // await init();
+
+      // 2) now call your bench
+      const logH = 15;
+      const t0 = performance.now();
+      const result = run_st(logH);
+      const t1 = performance.now();
+
+      const msg = `run_st(${logH}) → ${result}  (took ${(t1 - t0).toFixed(3)} ms)`;
+      document.getElementById('output').textContent = msg;
+      console.log(msg);
+    })();
+  </script>
+</body>
+</html> -->
